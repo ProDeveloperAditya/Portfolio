@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  section {
+    @apply py-20 sm:py-28;
+  }
+
+  .section-heading {
+    @apply font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl;
+  }
+
+  .section-subheading {
+    @apply mt-4 text-lg leading-8 text-gray-400;
+  }
+}
+
+/* For reveal animations with Framer Motion */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
